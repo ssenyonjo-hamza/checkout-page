@@ -21,6 +21,39 @@
       <p>$39.99</p>
     </section>
 
-    <section></section>
+    <section>
+      <h2>Payment Information</h2>
+      <form action="https://httpbin.org/post" method="post">
+        <label for="bearer">CardBearer Name *</label>
+        <br />
+        <input
+          type="text"
+          name="bearer
+        "
+          id="bearer"
+        />
+
+        <br />
+        <label for="num">Card Number *</label>
+        <br />
+        <input
+          type="text"
+          name="number
+        "
+          id="num"
+        />
+        <p>Your 16-digit card number must be free of spaces or dashes.</p>
+
+        <label for="expiry"
+          >Card Expiry Date *
+          <input type="month" name="expiry" id="expiry" placeholder="MM/YYYY" />
+        </label>
+
+        <label for="code">CVV Code *</label>
+        <input type="number" name="code" id="code" maxlength="4" />
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
   </body>
 </html>
