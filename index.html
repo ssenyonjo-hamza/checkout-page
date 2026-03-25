@@ -24,33 +24,41 @@
     <section>
       <h2>Payment Information</h2>
       <form action="https://httpbin.org/post" method="post">
-        <label for="bearer">CardBearer Name *</label>
+        <label for="card-name">CardBearer Name *</label>
         <br />
         <input
           type="text"
-          name="bearer
+          name="card-name
         "
-          id="bearer"
+          id="card-name"
+          required
         />
 
         <br />
-        <label for="num">Card Number *</label>
+        <label for="card-number">Card Number *</label>
         <br />
         <input
           type="text"
-          name="number
+          name="card-number
         "
-          id="num"
+          id="card-number"
+          required
         />
         <p>Your 16-digit card number must be free of spaces or dashes.</p>
 
         <label for="expiry"
           >Card Expiry Date *
-          <input type="month" name="expiry" id="expiry" placeholder="MM/YYYY" />
+          <input
+            type="month"
+            name="expiry"
+            id="expiry"
+            placeholder="MM/YYYY"
+            required
+          />
         </label>
 
         <label for="code">CVV Code *</label>
-        <input type="number" name="code" id="code" maxlength="4" />
+        <input type="number" name="code" id="code" maxlength="4" required />
 
         <button type="submit">Place Order</button>
       </form>
