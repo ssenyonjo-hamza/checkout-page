@@ -35,8 +35,16 @@
           >Card Number <span aria-hidden="true">*</span></label
         >
         <br />
-        <input type="text" name="card-number" id="card-number" required />
-        <p>Your 16-digit card number must be free of spaces or dashes.</p>
+        <input
+          type="text"
+          name="card-number"
+          id="card-number"
+          aria-describedby="card-number-help"
+          required
+        />
+        <p id="card-number-help">
+          Your 16-digit card number must be free of spaces or dashes.
+        </p>
 
         <label for="expiry"
           >Card Expiry Date <span aria-hidden="true">*</span>
